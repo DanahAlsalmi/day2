@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        // FirstEx
+        System.out.println("*FirstEx*");
+        System.out.print("Enter a number : ");
+        int num = s.nextInt();
+        if (num>=1){
+            System.out.println("the number is positive");
+        } else if (num<=-1) {
+            System.out.println("the number is negative");
+        } else if (num==0) {
+            System.out.println("the number equals zero ");
+        }s.nextLine();
+
+        // SecondEx
+        System.out.println("*SecondEx*");
+        System.out.print("Enter the text : ");
+        String x=s.nextLine();
+
+        System.out.print("Enter the index : ");
+        int find=s.nextInt();
+        if (find<=x.length()-1) {
+            System.out.println(" the alphabet is : " + x.charAt(find));
+        }else
+        {
+            System.out.println("sorry! try again");
+        }s.nextLine();
+        //ThirdEx
+        System.out.println("*ThirdEx*");
+        System.out.print("Enter the text : ");
+        String z=s.nextLine();
+
+        System.out.print("Enter the alphabet : ");
+        String alp =s.nextLine();
+
+        if (z.indexOf(alp)!=-1){
+            System.out.println("it is contain ");
+        }else {
+            System.out.println("it is not contain");
+        }
+        //FourthEx
+        System.out.println("*FourthEx*");
+        System.out.print("Enter Num1 :");
+        int num1 =s.nextInt();
+        System.out.print("Enter Num2 :");
+        int num2 =s.nextInt();
+        System.out.print("Enter Num3 :");
+        int num3 =s.nextInt();
+        if (num1>=num2 && num1>=num3){
+            System.out.println(num1+" is the largest ");
+        } else if (num2>=num3 && num2>=num1) {
+            System.out.println(num2+" is the largest ");
+
+        }else {
+            System.out.println(num3+" is the largest  ");
+        }
+
+
+    }
+}
